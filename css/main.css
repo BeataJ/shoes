@@ -22,3 +22,8 @@ h3,
 p {
   margin: 0;
 }
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
