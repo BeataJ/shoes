@@ -40,3 +40,9 @@ p {
   border-radius: .25em;
   padding: .5em 1.25em;
 }
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.1);
+  opacity: .9
+}
