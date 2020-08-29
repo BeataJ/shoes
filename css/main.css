@@ -29,6 +29,10 @@ p {
   max-width: 65em;
 }
 
+.spacing>*+* {
+  margin-top: var(--spacer, 2rem);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
