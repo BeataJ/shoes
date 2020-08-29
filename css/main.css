@@ -118,7 +118,9 @@ section {
 }
 
 .price {
-  display: block
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .featured__item:hover,
