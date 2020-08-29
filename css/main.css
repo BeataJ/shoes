@@ -82,6 +82,7 @@ section {
   font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
   line-height: 1;
   color: #17353d;
+  margin-bottom: 3rem;
 }
 
 .hero {
