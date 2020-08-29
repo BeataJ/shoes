@@ -118,3 +118,11 @@ section {
 .featured__item:focus {
   transform: scale(1)
 }
+
+.featured__item::after {
+  content: '';
+  position: absolute;
+  padding: 100% 100% 0 0;
+  border-radius: 50%;
+  background: red
+}
