@@ -39,12 +39,12 @@ section {
   justify-content: center;
 }
 
-.split > * {
+.split>* {
   flex-basis: 30%;
   min-width: 15em;
 }
 
-.spacing > * + * {
+.spacing>*+* {
   margin-top: var(--spacer, 2rem);
 }
 
@@ -119,6 +119,11 @@ section {
   transform: scale(1);
 }
 
+.featured__item:hover .featured__details,
+.featured__item:focus .featured__details {
+  opacity: 1;
+}
+
 .featured__item::after {
   content: '';
   position: absolute;
@@ -131,7 +136,7 @@ section {
 }
 
 .featured__details {
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .featured__details .price {
