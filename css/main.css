@@ -137,6 +137,7 @@ section {
 
 .featured__details {
   opacity: 0;
+  transition: opacity 250ms linear;
 }
 
 .featured__details .price {
