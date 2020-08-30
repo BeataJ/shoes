@@ -6,8 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Noto Sans JP',
-    sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.6;
 }
 
@@ -40,12 +39,12 @@ section {
   justify-content: center;
 }
 
-.split>* {
+.split > * {
   flex-basis: 30%;
   min-width: 15em;
 }
 
-.spacing>*+* {
+.spacing > * + * {
   margin-top: var(--spacer, 2rem);
 }
 
@@ -57,17 +56,15 @@ section {
   text-transform: uppercase;
   font-size: 1.125rem;
   background: var(--clr-accent, blue);
-  border-radius: .25em;
-  padding: .5em 1.25em;
-  transition:
-    transform 250ms ease-in-out,
-    opacity 250ms linear;
+  border-radius: 0.25em;
+  padding: 0.5em 1.25em;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
 }
 
 .btn:hover,
 .btn:focus {
   transform: scale(1.1);
-  opacity: .8
+  opacity: 0.8;
 }
 
 .primary-title {
@@ -92,10 +89,9 @@ section {
   background-color: #222;
 }
 
-@supports(background-blend-mode: multiply) {
+@supports (background-blend-mode: multiply) {
   .hero {
-    background: url('../img/shoe-3.png'),
-      radial-gradient(#444, #111);
+    background: url('../img/shoe-3.png'), radial-gradient(#444, #111);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -110,22 +106,17 @@ section {
 .featured__item {
   display: block;
   position: relative;
-  transform: scale(.85);
+  transform: scale(0.85);
   transition: trasform 250ms ease-in-out;
   text-decoration: none;
   color: #333;
   text-align: center;
-}
-
-.price {
-  display: block;
-  font-weight: 700;
-  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .featured__item:hover,
 .featured__item:focus {
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .featured__item::after {
@@ -137,4 +128,14 @@ section {
   border-radius: 50%;
   background: #2193b0;
   z-index: -1;
+}
+
+.featured__details {
+  /* opacity: 0; */
+}
+
+.featured__details .price {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
